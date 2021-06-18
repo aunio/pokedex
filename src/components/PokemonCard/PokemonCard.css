@@ -1,0 +1,139 @@
+* {
+  --grass-light: #a7db8d;
+  --grass-normal: #78c850;
+  --grass-dark: #4e8234;
+  --fire-light: #f5ac78;
+  --fire-normal: #f08030;
+  --fire-dark: #9c531f;
+  --water-light: #9db7f5;
+  --water-normal: #6890f0;
+  --water-dark: #445e9c;
+  --bug-light: #c6d16e;
+  --bug-normal: #a8b820;
+  --bug-dark: #6d7815;
+  --normal-light: #c6c6a7;
+  --normal-normal: #a8a878;
+  --normal-dark: #6d6d4e;
+  --poison-light: #c183c1;
+  --poison-normal: #a040a0;
+  --poison-dark: #682a68;
+  --ground-light: #ebd69d;
+  --ground-normal: #e0c068;
+  --ground-dark: #927d44;
+  --electric-light: #fae078;
+  --electric-normal: #f8d030;
+  --electric-dark: #a1871f;
+}
+
+.pokemonCard {
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.pokemonCard .pokemonCard__linkImage {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.pokemonCard.grassType .card-header {
+  padding: 13px;
+  background-color: var(--grass-light);
+}
+
+.pokemonCard.fireType .card-header {
+  padding: 13px;
+  background-color: var(--fire-light);
+}
+
+.pokemonCard.waterType .card-header {
+  padding: 13px;
+  background-color: var(--water-light);
+}
+
+.pokemonCard .pokemonCard__pokemonNameContent {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.pokemonCard .pokemonCard__pokemonName {
+  margin: 0;
+  padding: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.pokemonCard .pokemonCard__pokemonNumberContent {
+  padding: 0;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.pokemonCard .pokemonCard__pokemonNumber {
+  margin: 0;
+  padding: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.pokemonCard .pokemonCard_pokemonImageContent {
+  margin: 13px 0 0 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.pokemonCard .card-img-top {
+}
+
+.pokemonCard .card-body {
+  background-color: #fff;
+}
+
+.pokemonCard.grassType {
+  background-color: var(--grass-normal);
+  border: 7px solid var(--grass-dark);
+}
+
+.pokemonCard.fireType {
+  background-color: var(--fire-normal);
+  border: 7px solid var(--fire-dark);
+}
+
+.pokemonCard.waterType {
+  background-color: var(--water-normal);
+  border: 7px solid var(--water-dark);
+}
+
+.pokemonCard.bugType {
+  background-color: var(--bug-normal);
+  border: 7px solid var(--bug-dark);
+}
+
+.pokemonCard.normalType {
+  background-color: var(--normal-normal);
+  border: 7px solid var(--normal-dark);
+}
+
+.pokemonCard.poisonType {
+  background-color: var(--poison-light);
+  border: 7px solid var(--poison-normal);
+}
+
+.pokemonCard.groundType {
+  background-color: var(--ground-light);
+  border: 7px solid var(--ground-normal);
+}
+
+.pokemonCard.electricType {
+  background-color: var(--electric-light);
+  border: 7px solid var(--electric-normal);
+}

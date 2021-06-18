@@ -3,15 +3,15 @@ import axios from 'axios'
 import { Row, Col } from 'react-bootstrap'
 
 // components
-import Pokemon from '../components/Pokemon'
-import Loader from '../components/Loader'
+import PokemonCard from '../components/PokemonCard/PokemonCard'
+import Loader from '../components/Loader/Loader'
 
 const Home = () => {
 
     const [pokemon, setPokemon] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const getPokemonList = async () => {
+    const getPokemons = async () => {
         let pokemonArray = [];
         for(let i = 1 ; i <= 151 ; i++) {
             pokemonArray.push(await getPokemonData(i))
@@ -29,7 +29,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        getPokemonList();
+        getPokemons();
     }, [])
 
     return (
@@ -40,7 +40,7 @@ const Home = () => {
                 <Row>
                     { pokemon.map( p => (
                         <Col key={p.data.name} xs={12} sm={12} md={4} lg={4} xl={4}>
-                            <Pokemon pokemon={p.data} />
+                            <PokemonCard pokemon={p.data} />
 
                         </Col>
                     ))}
