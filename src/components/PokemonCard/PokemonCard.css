@@ -39,18 +39,21 @@
   text-decoration: none;
 }
 
-.pokemonCard.grassType .card-header {
+.pokemonCard .card-header {
   padding: 13px;
+  margin: 0 0 13px 0;
+  border-radius: 5px;
+}
+
+.pokemonCard.grassType .card-header {
   background-color: var(--grass-light);
 }
 
 .pokemonCard.fireType .card-header {
-  padding: 13px;
   background-color: var(--fire-light);
 }
 
 .pokemonCard.waterType .card-header {
-  padding: 13px;
   background-color: var(--water-light);
 }
 
@@ -91,11 +94,14 @@
   border-radius: 5px;
 }
 
-.pokemonCard .card-img-top {
+.pokemonCard .card-body {
+  padding: 13px;
+  margin: 0 0 13px 0;
+  border-radius: 5px;
 }
 
-.pokemonCard .card-body {
-  background-color: #fff;
+.pokemonCard.grassType .card-body {
+  background-color: var(--grass-light);
 }
 
 .pokemonCard.grassType {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -39,7 +39,34 @@ const PokemonCard = ({ pokemon }) => {
                                 </div>
                             </Col>
                         </Row>
-                    </Card.Header> 
+                    </Card.Header>
+                    <Card.Body>
+                        <Row>
+                            <Col xs={12}>
+                                <div className="pokemonCard__pokemonTypesContent">
+                                    <span className="pokemonCard__pokemonTypes">Type</span>
+                                    <Row>
+
+                                    { pokemon.types.length == 1 ? (
+                                        <Col xs={12}>
+                                            <span>{pokemon.types[0].type.name}</span>
+                                        </Col>
+                                    ) : (
+                                        <>
+                                            <Col xs={6}>
+                                                <span>{pokemon.types[0].type.name}</span>
+                                            </Col>
+                                            <Col xs={6}>
+                                                <span>{pokemon.types[1].type.name}</span>
+                                            </Col>
+                                        </>
+                                    )}
+
+                                    </Row>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Card.Body>
                 </Link>
             </Card>
         </>
