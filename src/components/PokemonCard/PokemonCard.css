@@ -1,93 +1,31 @@
-* {
-  --grass-light: #a7db8d;
-  --grass-normal: #78c850;
-  --grass-dark: #4e8234;
-  --fire-light: #f5ac78;
-  --fire-normal: #f08030;
-  --fire-dark: #9c531f;
-  --water-light: #9db7f5;
-  --water-normal: #6890f0;
-  --water-dark: #445e9c;
-  --bug-light: #c6d16e;
-  --bug-normal: #a8b820;
-  --bug-dark: #6d7815;
-  --normal-light: #c6c6a7;
-  --normal-normal: #a8a878;
-  --normal-dark: #6d6d4e;
-  --poison-light: #c183c1;
-  --poison-normal: #a040a0;
-  --poison-dark: #682a68;
-  --ground-light: #ebd69d;
-  --ground-normal: #e0c068;
-  --ground-dark: #927d44;
-  --electric-light: #fae078;
-  --electric-normal: #f8d030;
-  --electric-dark: #a1871f;
-
-  text-decoration: none;
+.card-header {
+  padding: 13px;
+  margin: 0 0 13px 0;
+  border-radius: 5px;
 }
 
-.grassType {
-  background-color: var(--grass-normal);
+.card-body {
+  padding: 13px;
+  margin: 0 0 13px 0;
+  border-radius: 5px;
 }
 
-.fireType {
-  background-color: var(--fire-normal);
-}
-
-.waterType {
-  background-color: var(--water-normal);
-}
-
-.bugType {
-  background-color: var(--bug-normal);
-}
-
-.normalType {
-  background-color: var(--normal-normal);
-}
-
-.poisonType {
-  background-color: var(--poison-light);
-}
-
-.groundType {
-  background-color: var(--ground-light);
-}
-
-.electricType {
-  background-color: var(--electric-light);
-}
-
-.pokemonCard {
-  border: none;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 0;
-}
-
-.pokemonCard .pokemonCard__linkImage {
+.pokemonCard__link {
   align-items: center;
   justify-content: center;
   text-align: center;
   text-decoration: none;
 }
 
-.pokemonCard .card-header {
-  padding: 13px;
-  margin: 0 0 13px 0;
-  border-radius: 5px;
-}
-
-.pokemonCard .pokemonCard__pokemonNameContent {
+.pokemonCard__pokemonNameContent {
   padding: 0;
   margin: 0;
   background: #fff;
   border-radius: 5px;
 }
 
-.pokemonCard .pokemonCard__pokemonName,
-.pokemonCard .pokemonCard__pokemonNumber {
+.pokemonCard__pokemonName,
+.pokemonCard__pokemonNumber {
   margin: 0;
   padding: 13px;
   text-transform: capitalize;
@@ -96,25 +34,30 @@
   color: #000;
 }
 
-.pokemonCard .pokemonCard__pokemonNumberContent,
-.pokemonCard .pokemonCard__pokemonTypesContent {
+.pokemonCard__pokemonNumberContent,
+.pokemonCard__pokemonTypesContent {
   padding: 0;
   background: #fff;
   border-radius: 5px;
 }
 
-.pokemonCard .pokemonCard_pokemonImageContent {
+.pokemonCard_pokemonImageContent {
   margin: 13px 0 0 0;
   background-color: #fff;
   border-radius: 5px;
 }
 
-.pokemonCard .card-body {
-  padding: 13px;
-  margin: 0 0 13px 0;
+.pokemonCard__pokemonType {
+  margin: 13px;
+  padding: 3px 10px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
   border-radius: 5px;
 }
 
+/* Estilização das Cores nos Cards */
 /* Grass Card */
 .pokemonCard.grassType {
   background-color: var(--grass-normal);
@@ -127,6 +70,10 @@
 
 .pokemonCard.grassType .card-body {
   background-color: var(--grass-light);
+}
+
+.pokemonCard__pokemonType.grassType {
+  background-color: var(--grass-normal);
 }
 
 /* Fire Card */
@@ -143,6 +90,10 @@
   background-color: var(--fire-light);
 }
 
+.pokemonCard__pokemonType.fireType {
+  background-color: var(--fire-normal);
+}
+
 /* Water Card */
 .pokemonCard.waterType {
   background-color: var(--water-normal);
@@ -157,16 +108,6 @@
   background-color: var(--water-light);
 }
 
-/* Bug Card */
-.pokemonCard.bugType {
-  background-color: var(--bug-normal);
-  border: 7px solid var(--bug-dark);
-}
-
-.pokemonCard.bugType .card-header {
-  background-color: var(--bug-light);
-}
-
-.pokemonCard.bugType .card-body {
-  background-color: var(--bug-light);
+.pokemonCard__pokemonType.waterType {
+  background-color: var(--water-normal);
 }

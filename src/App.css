@@ -1,3 +1,71 @@
+* {
+  --grass-light: #a7db8d;
+  --grass-normal: #78c850;
+  --grass-dark: #4e8234;
+  --fire-light: #f5ac78;
+  --fire-normal: #f08030;
+  --fire-dark: #9c531f;
+  --water-light: #9db7f5;
+  --water-normal: #6890f0;
+  --water-dark: #445e9c;
+  --bug-light: #c6d16e;
+  --bug-normal: #a8b820;
+  --bug-dark: #6d7815;
+  --normal-light: #c6c6a7;
+  --normal-normal: #a8a878;
+  --normal-dark: #6d6d4e;
+  --poison-light: #c183c1;
+  --poison-normal: #a040a0;
+  --poison-dark: #682a68;
+  --ground-light: #ebd69d;
+  --ground-normal: #e0c068;
+  --ground-dark: #927d44;
+  --electric-light: #fae078;
+  --electric-normal: #f8d030;
+  --electric-dark: #a1871f;
+
+  text-decoration: none;
+}
+
+.grassType {
+  background-color: var(--grass-normal);
+}
+
+.fireType {
+  background-color: var(--fire-normal);
+}
+
+.waterType {
+  background-color: var(--water-normal);
+}
+
+.bugType {
+  background-color: var(--bug-normal);
+}
+
+.normalType {
+  background-color: var(--normal-normal);
+}
+
+.poisonType {
+  background-color: var(--poison-light);
+}
+
+.groundType {
+  background-color: var(--ground-light);
+}
+
+.electricType {
+  background-color: var(--electric-light);
+}
+
+.pokemonCard {
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0;
+}
+
 .title {
   margin-bottom: 13px;
   color: #000;

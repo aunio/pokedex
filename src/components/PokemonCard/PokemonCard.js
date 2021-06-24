@@ -13,7 +13,7 @@ const PokemonCard = ({ pokemon }) => {
             >
                 <Link
                     to={`/pokemon/${pokemon.id}`}
-                    className="pokemonCard__linkImage">  
+                    className="pokemonCard__link">  
                     <Card.Header>
                         <Row>
                             <Col xs={8}>
@@ -49,7 +49,7 @@ const PokemonCard = ({ pokemon }) => {
 
                                     { pokemon.types.length == 1 ? (
                                         <Col xs={12}>
-                                            <span className={`pokemonCard__pokemonType ${pokemon.types[0].type.name}Type`}>{pokemon.types[0].type.name}</span>
+                                            <p className={`pokemonCard__pokemonType ${pokemon.types[0].type.name}Type`}>{pokemon.types[0].type.name}</p>
                                         </Col>
                                     ) : (
                                         <>
