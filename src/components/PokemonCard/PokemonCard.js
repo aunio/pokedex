@@ -43,21 +43,21 @@ const PokemonCard = ({ pokemon }) => {
                     <Card.Body>
                         <Row>
                             <Col xs={12}>
+                                <p className="title">Type</p>
                                 <div className="pokemonCard__pokemonTypesContent">
-                                    <span className="pokemonCard__pokemonTypes">Type</span>
                                     <Row>
 
                                     { pokemon.types.length == 1 ? (
                                         <Col xs={12}>
-                                            <span>{pokemon.types[0].type.name}</span>
+                                            <span className={`pokemonCard__pokemonType ${pokemon.types[0].type.name}Type`}>{pokemon.types[0].type.name}</span>
                                         </Col>
                                     ) : (
                                         <>
                                             <Col xs={6}>
-                                                <span>{pokemon.types[0].type.name}</span>
+                                                <span className={`pokemonCard__pokemonType ${pokemon.types[0].type.name}Type`}>{pokemon.types[0].type.name}</span>
                                             </Col>
                                             <Col xs={6}>
-                                                <span>{pokemon.types[1].type.name}</span>
+                                                <span className={`pokemonCard__pokemonType ${pokemon.types[1].type.name}Type`}>{pokemon.types[1].type.name}</span>
                                             </Col>
                                         </>
                                     )}
