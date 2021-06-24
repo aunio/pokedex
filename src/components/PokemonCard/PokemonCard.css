@@ -1,7 +1,7 @@
 .card-header {
   padding: 13px;
   margin: 0 0 13px 0;
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 
 .card-body {
