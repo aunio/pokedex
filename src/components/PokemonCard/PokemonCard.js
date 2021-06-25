@@ -7,7 +7,6 @@ import './PokemonCard.css'
 const PokemonCard = ({ pokemon }) => {
 
     const listTypes = []
-
     for(let indexType in pokemon.types) {
 
         if(pokemon.types.length === 1) {
@@ -30,7 +29,6 @@ const PokemonCard = ({ pokemon }) => {
     }
 
     const listAbilities = []
-
     for(let indexAbility in pokemon.abilities) {
 
         listAbilities.push(

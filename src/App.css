@@ -29,6 +29,18 @@
   --flying-light: #c6b7f5;
   --flying-normal: #a890f0;
   --flying-dark: #6d5e9c;
+  --fighting-light: #d67873;
+  --fighting-normal: #c03028;
+  --fighting-dark: #7d1f1a;
+  --psychic-light: #fa92b2;
+  --psychic-normal: #f85888;
+  --psychic-dark: #a13959;
+  --rock-light: #d1c17d;
+  --rock-normal: #b8a038;
+  --rock-dark: #786824;
+  --ghost-light: #a292bc;
+  --ghost-normal: #705898;
+  --ghost-dark: #493963;
 
   text-decoration: none;
 }

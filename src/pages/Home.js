@@ -38,10 +38,9 @@ const Home = () => {
                 <Loader />
             ) : (
                 <Row>
-                    { pokemon.map( p => (
-                        <Col key={p.data.name} xs={12} sm={12} md={4} lg={4} xl={4}>
-                            <PokemonCard pokemon={p.data} />
-
+                    { pokemon.map( pokemon => (
+                        <Col key={pokemon.data.name} xs={12} sm={12} md={4} lg={4} xl={4}>
+                            <PokemonCard pokemon={pokemon.data} />
                         </Col>
                     ))}
                 </Row>

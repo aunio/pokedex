@@ -257,3 +257,75 @@
 .pokemonCard__pokemonType.flyingType {
   background-color: var(--flying-normal);
 }
+
+/* Fighting Card */
+.pokemonCard.fightingType {
+  background-color: var(--fighting-normal);
+  border: 7px solid var(--fighting-dark);
+}
+
+.pokemonCard.fightingType .card-header {
+  background-color: var(--fighting-light);
+}
+
+.pokemonCard.fightingType .card-body {
+  background-color: var(--fighting-light);
+}
+
+.pokemonCard__pokemonType.fightingType {
+  background-color: var(--fighting-normal);
+}
+
+/* Psychic Card */
+.pokemonCard.psychicType {
+  background-color: var(--psychic-normal);
+  border: 7px solid var(--psychic-dark);
+}
+
+.pokemonCard.psychicType .card-header {
+  background-color: var(--psychic-light);
+}
+
+.pokemonCard.psychicType .card-body {
+  background-color: var(--psychic-light);
+}
+
+.pokemonCard__pokemonType.psychicType {
+  background-color: var(--psychic-normal);
+}
+
+/* Rock Card */
+.pokemonCard.rockType {
+  background-color: var(--rock-normal);
+  border: 7px solid var(--rock-dark);
+}
+
+.pokemonCard.rockType .card-header {
+  background-color: var(--rock-light);
+}
+
+.pokemonCard.rockType .card-body {
+  background-color: var(--rock-light);
+}
+
+.pokemonCard__pokemonType.rockType {
+  background-color: var(--rock-normal);
+}
+
+/* Ghost Card */
+.pokemonCard.ghostType {
+  background-color: var(--ghost-normal);
+  border: 7px solid var(--ghost-dark);
+}
+
+.pokemonCard.ghostType .card-header {
+  background-color: var(--ghost-light);
+}
+
+.pokemonCard.ghostType .card-body {
+  background-color: var(--ghost-light);
+}
+
+.pokemonCard__pokemonType.ghostType {
+  background-color: var(--ghost-normal);
+}
