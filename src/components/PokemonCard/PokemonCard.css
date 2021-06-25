@@ -1,13 +1,20 @@
 .card-header {
-  padding: 13px;
-  margin: 0 0 13px 0;
+  padding: 10px;
+  margin: 0 0 10px 0;
   border-radius: 5px !important;
 }
 
 .card-body {
-  padding: 13px;
-  margin: 0 0 13px 0;
+  padding: 10px 10px 0 10px;
+  margin: 0 0 10px 0;
   border-radius: 5px;
+}
+
+.pokemonCard {
+  border: none;
+  margin: 10px;
+  padding: 10px 10px 0 10px;
+  border-radius: 0;
 }
 
 .pokemonCard__link {
@@ -27,7 +34,7 @@
 .pokemonCard__pokemonName,
 .pokemonCard__pokemonNumber {
   margin: 0;
-  padding: 13px;
+  padding: 10px;
   text-transform: capitalize;
   text-align: center;
   font-size: 18px;
@@ -35,26 +42,39 @@
 }
 
 .pokemonCard__pokemonNumberContent,
-.pokemonCard__pokemonTypesContent {
+.pokemonCard__pokemonTypesContent,
+.pokemonCard__pokemonAbilitiesContent {
+  margin: 0 0 10px 0;
   padding: 0;
   background: #fff;
   border-radius: 5px;
 }
 
+.pokemonCard__pokemonAbilitiesContent {
+  min-height: 88px;
+}
+
 .pokemonCard_pokemonImageContent {
-  margin: 13px 0 0 0;
+  margin: 10px 0 0 0;
   background-color: #fff;
   border-radius: 5px;
 }
 
 .pokemonCard__pokemonType {
-  margin: 13px;
+  margin: 10px 0;
   padding: 3px 10px;
   display: inline-block;
   text-transform: capitalize;
   font-weight: 600;
   color: #fff;
   border-radius: 5px;
+}
+
+.pokemonCard__pokemonAbility {
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #000;
 }
 
 /* Estilização das Cores nos Cards */
@@ -110,4 +130,130 @@
 
 .pokemonCard__pokemonType.waterType {
   background-color: var(--water-normal);
+}
+
+/* Bug Card */
+.pokemonCard.bugType {
+  background-color: var(--bug-normal);
+  border: 7px solid var(--bug-dark);
+}
+
+.pokemonCard.bugType .card-header {
+  background-color: var(--bug-light);
+}
+
+.pokemonCard.bugType .card-body {
+  background-color: var(--bug-light);
+}
+
+.pokemonCard__pokemonType.bugType {
+  background-color: var(--bug-normal);
+}
+
+/* Normal Card */
+.pokemonCard.normalType {
+  background-color: var(--normal-normal);
+  border: 7px solid var(--normal-dark);
+}
+
+.pokemonCard.normalType .card-header {
+  background-color: var(--normal-light);
+}
+
+.pokemonCard.normalType .card-body {
+  background-color: var(--normal-light);
+}
+
+.pokemonCard__pokemonType.normalType {
+  background-color: var(--normal-normal);
+}
+
+/* Poison Card */
+.pokemonCard.poisonType {
+  background-color: var(--poison-normal);
+  border: 7px solid var(--poison-dark);
+}
+
+.pokemonCard.poisonType .card-header {
+  background-color: var(--poison-light);
+}
+
+.pokemonCard.poisonType .card-body {
+  background-color: var(--poison-light);
+}
+
+.pokemonCard__pokemonType.poisonType {
+  background-color: var(--poison-normal);
+}
+
+/* Electric Card */
+.pokemonCard.electricType {
+  background-color: var(--electric-normal);
+  border: 7px solid var(--electric-dark);
+}
+
+.pokemonCard.electricType .card-header {
+  background-color: var(--electric-light);
+}
+
+.pokemonCard.electricType .card-body {
+  background-color: var(--electric-light);
+}
+
+.pokemonCard__pokemonType.electricType {
+  background-color: var(--electric-normal);
+}
+
+/* Ground Card */
+.pokemonCard.groundType {
+  background-color: var(--ground-normal);
+  border: 7px solid var(--ground-dark);
+}
+
+.pokemonCard.groundType .card-header {
+  background-color: var(--ground-light);
+}
+
+.pokemonCard.groundType .card-body {
+  background-color: var(--ground-light);
+}
+
+.pokemonCard__pokemonType.groundType {
+  background-color: var(--ground-normal);
+}
+
+/* Fairy Card */
+.pokemonCard.fairyType {
+  background-color: var(--fairy-normal);
+  border: 7px solid var(--fairy-dark);
+}
+
+.pokemonCard.fairyType .card-header {
+  background-color: var(--fairy-light);
+}
+
+.pokemonCard.fairyType .card-body {
+  background-color: var(--fairy-light);
+}
+
+.pokemonCard__pokemonType.fairyType {
+  background-color: var(--fairy-normal);
+}
+
+/* Flying Card */
+.pokemonCard.flyingType {
+  background-color: var(--flying-normal);
+  border: 7px solid var(--flying-dark);
+}
+
+.pokemonCard.flyingType .card-header {
+  background-color: var(--flying-light);
+}
+
+.pokemonCard.flyingType .card-body {
+  background-color: var(--flying-light);
+}
+
+.pokemonCard__pokemonType.flyingType {
+  background-color: var(--flying-normal);
 }

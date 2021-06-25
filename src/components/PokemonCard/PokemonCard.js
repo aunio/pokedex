@@ -6,6 +6,42 @@ import './PokemonCard.css'
 
 const PokemonCard = ({ pokemon }) => {
 
+    const listTypes = []
+
+    for(let indexType in pokemon.types) {
+
+        if(pokemon.types.length === 1) {
+            listTypes.push(
+                <Col xs={12} key={indexType}>
+                    <p className={`pokemonCard__pokemonType ${pokemon.types[indexType].type.name}Type`}>
+                        {pokemon.types[indexType].type.name}
+                    </p>
+                </Col>
+            )
+        } else {
+            listTypes.push(
+                <Col xs={6} key={indexType}>
+                    <p className={`pokemonCard__pokemonType ${pokemon.types[indexType].type.name}Type`}>
+                        {pokemon.types[indexType].type.name}
+                    </p>
+                </Col>
+            )
+        }
+    }
+
+    const listAbilities = []
+
+    for(let indexAbility in pokemon.abilities) {
+
+        listAbilities.push(
+            <Col xs={6} key={indexAbility}>
+                <p className="pokemonCard__pokemonAbility">
+                    {pokemon.abilities[indexAbility].ability.name}
+                </p>
+            </Col>
+        )
+    }
+
     return (
         <>
             <Card
@@ -46,22 +82,15 @@ const PokemonCard = ({ pokemon }) => {
                                 <p className="title">Type</p>
                                 <div className="pokemonCard__pokemonTypesContent">
                                     <Row>
-
-                                    { pokemon.types.length == 1 ? (
-                                        <Col xs={12}>
-                                            <p className={`pokemonCard__pokemonType ${pokemon.types[0].type.name}Type`}>{pokemon.types[0].type.name}</p>
-                                        </Col>
-                                    ) : (
-                                        <>
-                                            <Col xs={6}>
-                                                <span className={`pokemonCard__pokemonType ${pokemon.types[0].type.name}Type`}>{pokemon.types[0].type.name}</span>
-                                            </Col>
-                                            <Col xs={6}>
-                                                <span className={`pokemonCard__pokemonType ${pokemon.types[1].type.name}Type`}>{pokemon.types[1].type.name}</span>
-                                            </Col>
-                                        </>
-                                    )}
-
+                                        { listTypes }
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col xs={12}>
+                                <p className="title">Abilities</p>
+                                <div className="pokemonCard__pokemonAbilitiesContent">
+                                    <Row>
+                                        { listAbilities }
                                     </Row>
                                 </div>
                             </Col>
