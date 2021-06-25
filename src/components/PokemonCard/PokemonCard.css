@@ -52,7 +52,7 @@
 }
 
 .pokemonCard__pokemonAbilitiesContent {
-  min-height: 72px;
+  min-height: 112.8px;
 }
 
 .pokemonCard_pokemonImageContent {
@@ -330,6 +330,42 @@
 
 .pokemonCard__pokemonType.ghostType {
   background-color: var(--ghost-normal);
+}
+
+/* Ice Card */
+.pokemonCard.iceType {
+  background-color: var(--ice-normal);
+  border: 7px solid var(--ice-dark);
+}
+
+.pokemonCard.iceType .card-header {
+  background-color: var(--ice-light);
+}
+
+.pokemonCard.iceType .card-body {
+  background-color: var(--ice-light);
+}
+
+.pokemonCard__pokemonType.iceType {
+  background-color: var(--ice-normal);
+}
+
+/* Dragon Card */
+.pokemonCard.dragonType {
+  background-color: var(--dragon-normal);
+  border: 7px solid var(--dragon-dark);
+}
+
+.pokemonCard.dragonType .card-header {
+  background-color: var(--dragon-light);
+}
+
+.pokemonCard.dragonType .card-body {
+  background-color: var(--dragon-light);
+}
+
+.pokemonCard__pokemonType.dragonType {
+  background-color: var(--dragon-normal);
 }
 
 /* Mobile */

@@ -46,6 +46,12 @@
   --ghost-light: #a292bc;
   --ghost-normal: #705898;
   --ghost-dark: #493963;
+  --ice-light: #bce6e6;
+  --ice-normal: #98d8d8;
+  --ice-dark: #638d8d;
+  --dragon-light: #a27dfa;
+  --dragon-normal: #7038f8;
+  --dragon-dark: #4924a1;
 
   text-decoration: none;
   font-family: pokemonGB, sans-serif;
