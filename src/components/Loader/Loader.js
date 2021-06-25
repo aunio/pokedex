@@ -1,5 +1,5 @@
 import React from 'react';
-import imgPikachuRunning from '../../assets/img/pikachuRunning.gif'
+import imgPikachuRunning from '../../assets/img/loading.gif'
 
 import './Loader.css'
 
@@ -11,9 +11,6 @@ const Loader = () => {
         >
             <div>
                 <img src={imgPikachuRunning} />
-                <div>
-                    <span>Carregando Pokédex...</span>
-                </div>
             </div>
 
         </div>
