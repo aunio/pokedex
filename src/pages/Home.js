@@ -38,6 +38,9 @@ const Home = () => {
                 <Loader />
             ) : (
                 <Row>
+                    <Col xs={12}>
+                        <h2>POKEDEX</h2>
+                    </Col>
                     { pokemon.map( pokemon => (
                         <Col key={pokemon.data.name} xs={12} sm={12} md={6} lg={6} xl={4}>
                             <PokemonCard pokemon={pokemon.data} />
