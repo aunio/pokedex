@@ -38,6 +38,7 @@
   text-transform: capitalize;
   text-align: center;
   font-size: 18px;
+  font-weight: 600;
   color: #000;
 }
 
@@ -51,7 +52,7 @@
 }
 
 .pokemonCard__pokemonAbilitiesContent {
-  min-height: 88px;
+  min-height: 72px;
 }
 
 .pokemonCard_pokemonImageContent {
@@ -65,7 +66,7 @@
   padding: 3px 10px;
   display: inline-block;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   border-radius: 5px;
 }
@@ -73,7 +74,8 @@
 .pokemonCard__pokemonAbility {
   margin: 10px 0;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 12px;
   color: #000;
 }
 
@@ -328,4 +330,27 @@
 
 .pokemonCard__pokemonType.ghostType {
   background-color: var(--ghost-normal);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pokemonCard__pokemonName,
+  .pokemonCard__pokemonNumber {
+    font-size: 14px;
+  }
+
+  .pokemonCard__pokemonType {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .pokemonCard__pokemonName,
+  .pokemonCard__pokemonNumber {
+    font-size: 14px;
+  }
+
+  .pokemonCard__pokemonType {
+    font-size: 11px;
+  }
 }

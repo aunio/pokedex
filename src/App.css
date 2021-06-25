@@ -1,3 +1,8 @@
+@font-face {
+  font-family: pokemonGB;
+  src: url(./assets/fonts/Pokemon\ GB.ttf);
+}
+
 * {
   --grass-light: #a7db8d;
   --grass-normal: #78c850;
@@ -43,6 +48,7 @@
   --ghost-dark: #493963;
 
   text-decoration: none;
+  font-family: pokemonGB, sans-serif;
 }
 
 .grassType {

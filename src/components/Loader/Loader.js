@@ -1,5 +1,5 @@
 import React from 'react';
-import imgPikachuRunning from '../../img/pikachuRunning.gif'
+import imgPikachuRunning from '../../assets/img/pikachuRunning.gif'
 
 import './Loader.css'
 

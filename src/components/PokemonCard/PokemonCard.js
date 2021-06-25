@@ -8,7 +8,6 @@ const PokemonCard = ({ pokemon }) => {
 
     const listTypes = []
     for(let indexType in pokemon.types) {
-
         if(pokemon.types.length === 1) {
             listTypes.push(
                 <Col xs={12} key={indexType}>
@@ -30,9 +29,8 @@ const PokemonCard = ({ pokemon }) => {
 
     const listAbilities = []
     for(let indexAbility in pokemon.abilities) {
-
         listAbilities.push(
-            <Col xs={6} key={indexAbility}>
+            <Col xs={12} sm={12} md={12} lg={6} xl={6} key={indexAbility}>
                 <p className="pokemonCard__pokemonAbility">
                     {pokemon.abilities[indexAbility].ability.name}
                 </p>
