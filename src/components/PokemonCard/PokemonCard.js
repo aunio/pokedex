@@ -55,9 +55,9 @@ const PokemonCard = ({ pokemon }) => {
                             </Col>
                             <Col xs={4}>
                                 <div className="pokemonCard__pokemonNumberContent">
-                                    {pokemon.order < 10 && ( <h2 className="pokemonCard__pokemonNumber">#00{pokemon.order}</h2> )}
-                                    {pokemon.order > 9 && pokemon.order < 100 && ( <h2 className="pokemonCard__pokemonNumber">#0{pokemon.order}</h2> )}
-                                    {pokemon.order > 99 && ( <h2 className="pokemonCard__pokemonNumber">#{pokemon.order}</h2> )}
+                                    {pokemon.id < 10 && ( <h2 className="pokemonCard__pokemonNumber">#00{pokemon.id}</h2> )}
+                                    {pokemon.id > 9 && pokemon.id < 100 && ( <h2 className="pokemonCard__pokemonNumber">#0{pokemon.id}</h2> )}
+                                    {pokemon.id > 99 && ( <h2 className="pokemonCard__pokemonNumber">#{pokemon.id}</h2> )}
                                 </div>
                             </Col>
                             <Col xs={12}>
