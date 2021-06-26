@@ -75,7 +75,7 @@ const PokemonCard = ({ pokemon }) => {
                     <Card.Body>
                         <Row>
                             <Col xs={12}>
-                                <p className="title">Type</p>
+                                <p className="pokemonCard__pokemonTitle">Type</p>
                                 <div className="pokemonCard__pokemonTypesContent">
                                     <Row>
                                         { listTypes }
@@ -83,7 +83,7 @@ const PokemonCard = ({ pokemon }) => {
                                 </div>
                             </Col>
                             <Col xs={12}>
-                                <p className="title">Abilities</p>
+                                <p className="pokemonCard__pokemonTitle">Abilities</p>
                                 <div className="pokemonCard__pokemonAbilitiesContent">
                                     <Row>
                                         { listAbilities }

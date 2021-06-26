@@ -1,4 +1,4 @@
-.loader {
+.pokedexLoader {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,6 +8,6 @@
   overflow: hidden;
 }
 
-.loader img {
+.pokedexLoader img {
   margin-bottom: 30px;
 }

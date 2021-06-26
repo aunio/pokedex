@@ -88,9 +88,3 @@
 .electricType {
   background-color: var(--electric-light);
 }
-
-.title {
-  margin-bottom: 13px;
-  color: #000;
-  font-weight: 600;
-}

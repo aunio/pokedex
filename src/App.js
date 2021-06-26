@@ -1,20 +1,15 @@
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
 
 // pages
-import Home from './pages/Home';
+import HomePage from './pages/HomePage/HomePage';
+import PokemonPage from './pages/PokemonPage/PokemonPage';
 
 const App = () => {
   return (
     <Router>
-      <Container>
-        <Row>
-          <Col xs={12}>
-            <Route exact path="/" component={Home} />
-          </Col>
-        </Row>
-      </Container>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/pokemon/:id" component={PokemonPage} />
     </Router>
   );
 }
