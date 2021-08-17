@@ -15,7 +15,7 @@ const HomePage = () => {
 
     const getPokemons = async () => {
         let pokemonArray = [];
-        for(let i = 1 ; i <= 151 ; i++) {
+        for (let i = 1; i <= 151; i++) {
             pokemonArray.push(await getPokemonData(i))
         }
 
@@ -36,7 +36,7 @@ const HomePage = () => {
 
     return (
         <>
-            { loading ? (
+            {loading ? (
                 <PokedexLoader />
             ) : (
                 <Container className="homePageContent">
@@ -47,7 +47,7 @@ const HomePage = () => {
                         {/* <Col xs={12} sm={12} md={6} lg={6} xl={6}>
                             <input type="text" className="mainSearch" />
                         </Col> */}
-                        { pokemon.map( pokemon => (
+                        {pokemon.map(pokemon => (
                             <Col key={pokemon.data.name} xs={12} sm={12} md={6} lg={6} xl={4}>
                                 <PokemonCard pokemon={pokemon.data} />
                             </Col>
