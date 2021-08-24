@@ -7,8 +7,8 @@ import './PokemonCard.css'
 const PokemonCard = ({ pokemon }) => {
 
     const listTypes = []
-    for(let indexType in pokemon.types) {
-        if(pokemon.types.length === 1) {
+    for (let indexType in pokemon.types) {
+        if (pokemon.types.length === 1) {
             listTypes.push(
                 <Col xs={12} key={indexType}>
                     <p className={`pokemonCard__pokemonType ${pokemon.types[indexType].type.name}Type`}>
@@ -28,7 +28,7 @@ const PokemonCard = ({ pokemon }) => {
     }
 
     const listAbilities = []
-    for(let indexAbility in pokemon.abilities) {
+    for (let indexAbility in pokemon.abilities) {
         listAbilities.push(
             <Col xs={12} sm={12} md={12} lg={12} xl={12} key={indexAbility}>
                 <p className="pokemonCard__pokemonAbility">
@@ -44,8 +44,8 @@ const PokemonCard = ({ pokemon }) => {
                 className={`pokemonCard ${pokemon.types[0].type.name}Type`}
             >
                 <Link
-                    to={`/pokemon/${pokemon.id}`}
-                    className="pokemonCard__link">  
+                    // to={`/pokemon/${pokemon.id}`}
+                    className="pokemonCard__link">
                     <Card.Header>
                         <Row>
                             <Col xs={8}>
@@ -55,9 +55,9 @@ const PokemonCard = ({ pokemon }) => {
                             </Col>
                             <Col xs={4}>
                                 <div className="pokemonCard__pokemonNumberContent">
-                                    {pokemon.id < 10 && ( <h2 className="pokemonCard__pokemonNumber">#00{pokemon.id}</h2> )}
-                                    {pokemon.id > 9 && pokemon.id < 100 && ( <h2 className="pokemonCard__pokemonNumber">#0{pokemon.id}</h2> )}
-                                    {pokemon.id > 99 && ( <h2 className="pokemonCard__pokemonNumber">#{pokemon.id}</h2> )}
+                                    {pokemon.id < 10 && (<h2 className="pokemonCard__pokemonNumber">#00{pokemon.id}</h2>)}
+                                    {pokemon.id > 9 && pokemon.id < 100 && (<h2 className="pokemonCard__pokemonNumber">#0{pokemon.id}</h2>)}
+                                    {pokemon.id > 99 && (<h2 className="pokemonCard__pokemonNumber">#{pokemon.id}</h2>)}
                                 </div>
                             </Col>
                             <Col xs={12}>
@@ -78,7 +78,7 @@ const PokemonCard = ({ pokemon }) => {
                                 <p className="pokemonCard__pokemonTitle">Type</p>
                                 <div className="pokemonCard__pokemonTypesContent">
                                     <Row>
-                                        { listTypes }
+                                        {listTypes}
                                     </Row>
                                 </div>
                             </Col>
@@ -86,7 +86,7 @@ const PokemonCard = ({ pokemon }) => {
                                 <p className="pokemonCard__pokemonTitle">Abilities</p>
                                 <div className="pokemonCard__pokemonAbilitiesContent">
                                     <Row>
-                                        { listAbilities }
+                                        {listAbilities}
                                     </Row>
                                 </div>
                             </Col>
